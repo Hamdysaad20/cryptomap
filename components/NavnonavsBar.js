@@ -12,7 +12,9 @@ function NavnonavsBar(props) {
                </div>
            </div>        
            <div className=" pb-1 text-right mr-6 ">
-           <Sininout/>
+           <Sininout
+           textcolor="text-white"
+           />
            </div>
 
        </header>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useSession, signIn, signOut } from "next-auth/react"
 
-function Sininout() {
+function Sininout(props) {
   const { data: session } = useSession()
 
   if (session) {
     return (
       <>
-<h1  style={{fontFamily:"BalooBhaijaan2",fontWeight:"500" }} className="">
+<h1  style={{fontFamily:"BalooBhaijaan2",fontWeight:"500" }} className={props.textcolor}>
 Signed in as {session.user.email.substring(0,3)}...{session.user.email.substring(session.user.email.length-10,session.user.email.length)} <br />
 
 </h1>
