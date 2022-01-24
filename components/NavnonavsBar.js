@@ -1,3 +1,5 @@
+import Sininout from "../components/Sininout";
+
 function NavnonavsBar(props) {
 
     return (
@@ -10,8 +12,7 @@ function NavnonavsBar(props) {
                </div>
            </div>        
            <div className=" pb-1 text-right mr-6 ">
-               <button style={{color:"white"}} className=" active:ring-offset-1 active:ring ring-pink-800 py-2 px-3 text-sm md:text-lg duration-200 rounded-md font-medium  hover:bg-gray-800 hover:text-gray-900">تسجيل الدخول</button>
-               <button style={{color:"white",backgroundColor:"#ed0e3f"}} className="active:ring-offset-4 active:ring ring-pink-800 hidden md:inline-block hover:bg-red-800 duration-200 py-2 px-3 font-medium ml-2 rounded-md">إنشاء حساب</button>
+           <Sininout/>
            </div>
 
        </header>
