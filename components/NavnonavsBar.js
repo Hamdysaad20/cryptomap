@@ -11,10 +11,22 @@ function NavnonavsBar(props) {
                    Crypto Map
                </div>
            </div>        
+         
+         
            <div className=" pb-1 text-right mr-6 ">
            <Sininout
            textcolor="text-white"
            />
+
+          
+
+
+
+
+
+
+
+
            </div>
 
        </header>
