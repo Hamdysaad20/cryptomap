@@ -1,5 +1,7 @@
-import { SessionProvider } from "next-auth/react"
-import '../styles/globals.css'
+import { SessionProvider } from "next-auth/react";
+import Footermain from "../components/FooterMain";
+import NavBar from "../components/NavBar";
+import "../styles/globals.css";
 
 export default function App({
   Component,
@@ -9,9 +11,11 @@ export default function App({
     <SessionProvider
       session={session}
       // Re-fetch session every 5 minutes
-      refetchInterval={5 * 60}
-    >
+      refetchInterval={5 * 60}>
+      <NavBar className='sticky top-0 overflow-hidden' />
+
       <Component {...pageProps} />
+      <Footermain />
     </SessionProvider>
-  )
+  );
 }
