@@ -22,8 +22,8 @@ function NavBar(props) {
 
         <div className=''></div>
 
-        <div className=''>
-          <Authnav />
+        <div className=' pt-3'>
+          <Authnav className='pt-3 ' />
         </div>
       </header>
     </div>

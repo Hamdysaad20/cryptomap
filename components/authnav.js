@@ -8,10 +8,10 @@ function Sininout(props) {
     return (
       <div>
         <button
-          className='absolute right-0 left-0'
+          className='absolute right-0 left-0 '
           onClick={() => signOut()}
           style={{ color: "white", backgroundColor: "#ed0e3f" }}
-          className='active:ring-offset-0 active:ring ring-pink-800  hover:bg-gray-800 duration-200 pb-2 pt-1 px-3 font-medium ml-2 rounded-md'>
+          className='active:ring-offset-0 active:ring ring-pink-800  hover:bg-gray-800 duration-200 pb-2 pt-1 px-5 font-medium ml-2 rounded-md'>
           الخروج
         </button>
       </div>
