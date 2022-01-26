@@ -13,9 +13,8 @@ export default function App({
       // Re-fetch session every 5 minutes
       refetchInterval={5 * 60}>
       <NavBar className='sticky top-0 overflow-hidden' />
-
       <Component {...pageProps} />
-      <Footermain />
+      <Footermain className='bottom-0 absolute w-full' />
     </SessionProvider>
   );
 }
