@@ -12,11 +12,6 @@ function footermain() {
             Created by Divzoon
           </p>
         </a>
-
-        <script
-          async='async'
-          data-cfasync='false'
-          src='//upgulpinon.com/1?z=4827362'></script>
       </footer>
     </div>
   );
