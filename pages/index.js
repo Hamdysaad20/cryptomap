@@ -18,6 +18,12 @@ export default function Home() {
         className='sticky top-0 overflow-hidden'
         home='border-b-4 border-red-500'
       />
+
+      <script>
+        (function(s,u,z,p){"{"}
+        s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);{"}"}
+        )(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4827352,document.body||document.documentElement)
+      </script>
     </div>
   );
 }
