@@ -126,7 +126,7 @@ function NavNavbarMobol(props) {
 
   return (
     <div>
-      <header className=' z-50 block sm:hidden mt-[-4px] overflow-hidden lg:max-w-9xl sticky top-0   bg-white shadow-sm pt-2'>
+      <header className=' z-50 block sm:hidden mt-[0px] overflow-hidden lg:max-w-9xl sticky top-0   bg-white shadow-sm pt-2'>
         <div className=' mx-3 gap-4  md:mx-15 xl:mx-16 grid md:outline-hidden grid-cols-5    text-center'>
           {nav.students.map((item, i) => (
             <div className=''>
@@ -172,8 +172,8 @@ function NavNavbarMobol(props) {
               </div>
             ))}
 
-            <div className='sm:hidden mt-3 backdrop-filter backdrop-blur-sm bg-gray-200 relative cursor-pointer  noselect  flex flex-col md:mr-16 lg:mr-32 xl:mr-20 2xl:mr-44  p-2  text-center  justify-center rounded-md  hover:bg-gray-100 duration-300'>
-              <Sininout className='justify-center' />
+            <div className=' sm:hidden mt-3 mx-auto backdrop-filter backdrop-blur-sm bg-gray-200 relative cursor-pointer  noselect  flex flex-col md:mr-16 lg:mr-32 xl:mr-20 2xl:mr-44  p-2 max-w-[400px] text-center  justify-center rounded-md  hover:bg-gray-100 duration-300'>
+              <Sininout className='justify-center ' />
             </div>
           </div>
         </div>

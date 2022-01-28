@@ -23,7 +23,7 @@ function Sininout(props) {
       <button
         onClick={() => signIn()}
         style={{ color: "white", backgroundColor: "#ed0e3f" }}
-        className='active:ring-offset-2 active:ring ring-pink-800   duration-200 pb-2 pt-1 px-3 font-medium ml-2 rounded-md'>
+        className='active:ring-offset-2 active:ring ring-pink-800   duration-200 pb-2 pt-1 px-[2px] sm:px-4 font-normal  rounded-md'>
         تسجيل الدخول
       </button>
     </div>
