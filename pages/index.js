@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NavNavbarMobol from "../components/NavNavbarMobol";
+import Blogs from "../components/blogs";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         className='sticky top-0 overflow-hidden'
         home='border-b-4 border-red-500'
       />
+
+      <Blogs className='' />
     </div>
   );
 }
