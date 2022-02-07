@@ -4,10 +4,10 @@ function blogs() {
   return (
     <div className=''>
       <div
-        className=' hover:drop-shadow-2xl hover:opacity-75 hover:scale-105 duration-500 mx-2 h-72 w-64 relative rounded-2xl mt-5 bg-no-repeat bg-center '
+        className=' hover:drop-shadow-2xl hover:opacity-90  duration-500 mx-2 h-72 w-64 relative rounded-2xl mt-5 bg-no-repeat bg-center '
         style={{ backgroundImage: "url(/Btest1.png)" }}>
         <div>
-          <div className='  grid grid-cols-3 backdrop-blur-md bg-white/30 absolute bottom-4   rounded-xl right-0 h-28 left-0 px-2 mx-4'>
+          <div className=' duration-500  grid grid-cols-3 backdrop-blur-md bg-white/30 absolute bottom-4   rounded-xl right-0 h-28 left-0 px-2 mx-4'>
             <div className='cursor-pointer pt-3 text-right font-thin text-xs '>
               <h1 className='cursor-pointer bg-yellow-300/40  backdrop-blur-xl rounded-full text-center h-5'>
                 {" "}
