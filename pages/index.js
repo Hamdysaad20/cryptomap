@@ -1,8 +1,27 @@
 import Head from "next/head";
 import NavNavbarMobol from "../components/NavNavbarMobol";
 import Blogs from "../components/blogs";
+import React ,{useState,useEffect} from "react";
 
 export default function Home() {
+const [data,setData]= useState([]);
+
+useEffect(() =>{
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'f9c66eb69cmsha63de54cc2e0606p1028efjsn7597f9b48eef',
+      'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+    }
+  };
+  
+  fetch('https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h', options)
+    .then(response => response.json())
+    .then(responseJson => {console.log(responseJson)
+       setData(responseJson)
+      })
+    .catch(err => console.error(err));
+},[])
   return (
     <div className='relative h-screen  '>
       <Head>
@@ -22,7 +41,7 @@ export default function Home() {
         className=' sticky top-0 overflow-hidden'
         home='border-b-4 border-red-500'
       />
-      <div className='max-w-7xl'>
+      <div className='max-w-7xl justify-center mx-auto'>
         <div className=''>
           <h1
             style={{
@@ -34,9 +53,10 @@ export default function Home() {
             className='text-right text-4xl mt-4 px-4 pt-4'>
             افضل المقالات
           </h1>
+<h1 className="text-red-500 text-4xl mt-4">  Crypto price :      {data.status}</h1>
           <hr className='' />
         </div>
-        <div className='px-12 w-full mt-12 hidden sm:inline-block  h-[360px] overflow-x-scroll overflow-y-hidden    '>
+        <div className='px-12 w-full mt-12 hidden sm:inline-block scroll-m-5 h-[360px] overflow-x-scroll overflow-y-hidden    '>
           <div className=' sm:mx-8 flex grid-cols-5  justify-center item-center '>
             <Blogs className='' />
             <Blogs className='' />

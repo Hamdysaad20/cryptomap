@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Authnav from "../components/authnav";
 
-function NavBar(props) {
+function NavBar() {
   return (
     <div className=' '>
       <header className=' text-white  bg-gray-900 text-center overflow-hidden lg:max-w-9xl sticky top-0 grid grid-cols-3   shadow-sm '>

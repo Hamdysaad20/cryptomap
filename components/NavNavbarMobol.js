@@ -162,6 +162,7 @@ function NavNavbarMobol(props) {
           className='   backdrop-filter  rounded pb-3 backdrop-blur-sm z-50 absolute w-full sm:hidden '>
           <div className='mx-2 '>
             {Navlist.students.map((item, i) => (
+            
               <div
                 className='sm:hidden cursor-pointer  noselect  flex flex-cols-2 md:mr-16 lg:mr-32 xl:mr-20 2xl:mr-44 text-right justify-end  p-2  rounded-md   hover:bg-gray-100 duration-300'
                 key={i}>
